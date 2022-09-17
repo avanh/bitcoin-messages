@@ -1,0 +1,9 @@
+.devcontainer
+.env
+.eslintrc.json
+.git
+.gitignore
+.vs
+.vscode
+node_modules
+README.md
