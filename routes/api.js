@@ -77,7 +77,10 @@ function fundRawTX(res, rawTX) {
     "id":"btcmessage",
     "method":"fundrawtransaction",
     "params":[
-      "${rawTX}"
+      "${rawTX}",
+      {
+        "fee_rate": 2
+      }
     ]
   }`;
   axios.post(nodeUrl, formatString(dataString), headers)
